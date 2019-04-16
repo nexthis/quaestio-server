@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero primary">
     <v-container grid-list-lg>
       <slot></slot>
     </v-container>
@@ -19,7 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  background-color: #e31e13;
   width: 100%;
   height: 70vh;
   position: relative;
@@ -31,6 +30,11 @@ export default {
     width: 100%;
     @media screen and (max-width: 600px) {
           height: 100px;
+    }
+  }
+  .container{
+    @media only screen and (min-width: 1904px){
+      max-width: 1185px;
     }
   }
 }
