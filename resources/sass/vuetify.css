@@ -2389,11 +2389,6 @@ video {
 [aria-disabled] {
   cursor: default;
 }
-::-moz-selection {
-  background-color: #b3d4fc; /* Required when declaring ::selection */
-  color: #000;
-  text-shadow: none;
-}
 ::selection {
   background-color: #b3d4fc; /* Required when declaring ::selection */
   color: #000;
@@ -2765,7 +2760,7 @@ code:after,
 kbd:after,
 code:before,
 kbd:before {
-  content: "\A0";
+  content: "\00a0";
   letter-spacing: -1px;
 }
 code {
@@ -3570,8 +3565,7 @@ p {
   border-color: rgba(0,0,0,0.87);
 }
 .theme--light.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before {
-  -o-border-image: repeating-linear-gradient(to right, rgba(0,0,0,0.38) 0px, rgba(0,0,0,0.38) 2px, transparent 2px, transparent 4px) 1 repeat;
-     border-image: repeating-linear-gradient(to right, rgba(0,0,0,0.38) 0px, rgba(0,0,0,0.38) 2px, transparent 2px, transparent 4px) 1 repeat;
+  border-image: repeating-linear-gradient(to right, rgba(0,0,0,0.38) 0px, rgba(0,0,0,0.38) 2px, transparent 2px, transparent 4px) 1 repeat;
 }
 .theme--light.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before .v-text-field__prefix,
 .theme--light.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before .v-text-field__suffix {
@@ -3624,8 +3618,7 @@ p {
   border-color: #fff;
 }
 .theme--dark.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before {
-  -o-border-image: repeating-linear-gradient(to right, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 2px, transparent 2px, transparent 4px) 1 repeat;
-     border-image: repeating-linear-gradient(to right, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 2px, transparent 2px, transparent 4px) 1 repeat;
+  border-image: repeating-linear-gradient(to right, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 2px, transparent 2px, transparent 4px) 1 repeat;
 }
 .theme--dark.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before .v-text-field__prefix,
 .theme--dark.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before .v-text-field__suffix {
@@ -10648,28 +10641,7 @@ table.v-table tfoot tr td {
 }
 .v-treeview-node__children {
   transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-}.v-card--border {
-  border: 1px solid rgba(0, 0, 0, 0.12) !important;
 }
 
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
 
-@media only screen and (max-width: 400px) {
-  .responsive-2 {
-    font-size: 35px !important;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .responsive-1 {
-    font-size: 25px !important;
-  }
-}
-
-body {
-  font-family: "Nunito", sans-serif;
-}
-
+/*# sourceMappingURL=vuetify.css.map*/
