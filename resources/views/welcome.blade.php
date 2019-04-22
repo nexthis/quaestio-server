@@ -108,7 +108,7 @@
     <i-divider>Co oferujemy?</i-divider>
 
     {{-- Offer --}}
-    <v-container grid-list-lg>
+    <v-container grid-list-xl>
         <v-layout row wrap align-center>
             <v-flex sm6>
                 @svg('undraw_around_the_world_v9nu','img-fluid')
@@ -131,18 +131,20 @@
                 <h1 class="display-3 responsive-3 text-xs-center py-3">Bądź unikalny</h1>
                 <p class="mt-3 text-xs-center display-1 responsive-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </v-flex>
+                    <v-btn color="accent" round large class="elevation-0 mx-auto" >Skontaktuj się z nami</v-btn>
         </v-layout>
+
+
     </v-container>
 
     <i-divider>Zmiany</i-divider>
 
     {{-- Changes --}}
-    <i-changes></i-changes>
+    <i-changes route="{{route('api.changes')}}"></i-changes>
 
     <i-divider>Autorzy</i-divider>
     <v-container grid-list-lg>
         <v-layout row wrap align-center>
-
             <v-flex sm4>
                 <v-card>
                     <v-img src="{{asset('image/pawel-romanowski.jpg')}}" ></v-img>
