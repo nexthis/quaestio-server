@@ -1,0 +1,26 @@
+.responsive{
+    &-3{
+        @media only screen and(max-width: 600px) {
+            font-size: 34px !important;
+            font-weight: 400;
+            line-height: 40px !important;
+            letter-spacing: normal !important;
+        }
+    }
+    &-2{
+        @media only screen and(max-width: 600px) {
+            font-size: 34px !important;
+            font-weight: 400;
+            line-height: 40px !important;
+            letter-spacing: normal !important;
+        }
+    }
+    &-1{
+        @media only screen and(max-width: 600px) {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 32px !important;
+            letter-spacing: normal !important;
+        }
+    }
+}
