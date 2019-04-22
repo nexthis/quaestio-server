@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Laravel</title>
+        <title>Quaestio</title>
 
         <!-- Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -25,6 +25,7 @@
         <v-app id="app">
             <v-content>
                 @yield('content')
+                <i-footer><h1 class="text-xs-center display-4 white--text">footer</h1></i-footer>
             </v-content>
         </v-app>
 

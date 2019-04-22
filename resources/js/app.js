@@ -16,6 +16,9 @@ import './plugins/plugins';
 
 Vue.component('i-hero', require('./components/i-hero.vue').default);
 Vue.component('i-divider', require('./components/i-divider.vue').default);
+Vue.component('i-carousel', require('./components/i-carousel.vue').default);
+Vue.component('i-changes', require('./components/i-changes.vue').default);
+Vue.component('i-footer', require('./components/i-footer.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
