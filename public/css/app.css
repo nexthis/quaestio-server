@@ -10690,6 +10690,16 @@ table.v-table tfoot tr td {
   }
 }
 
+.v-btn--extra-large {
+  font-size: 24px;
+  height: 70px;
+  padding: 0 35px;
+}
+
+.v-btn--extra-large__round {
+  border-radius: 100px;
+}
+
 body {
   font-family: "Nunito", sans-serif;
 }

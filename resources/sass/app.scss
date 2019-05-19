@@ -1,7 +1,9 @@
 @import 'vuetify.css';
-@import './card.scss';
-@import './image.scss';
-@import './typography.scss';
+@import './card';
+@import './image';
+@import './typography';
+@import './button';
+@import 'animation';
 
 body{
     font-family: 'Nunito', sans-serif;
