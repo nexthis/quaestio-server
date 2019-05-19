@@ -4,7 +4,7 @@
             <v-flex xs12 sm6 class="mt-5" :offset-sm6="index%2 ==0 ? true : false" v-for="(item,index) in changes" :key="index">
                 <v-card>
                     <v-card-title>
-                        <h1 class="display-1">{{item.title}} </h1> 
+                        <h4 class="display-1">{{item.title}} </h4> 
                         <v-spacer></v-spacer>
                         <img class="icon" :src="'storage/'+item.image" >
                         <p class="subheading mt-4">{{item.text}}</p>
