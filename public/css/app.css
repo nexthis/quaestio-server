@@ -10700,6 +10700,13 @@ table.v-table tfoot tr td {
   border-radius: 100px;
 }
 
+@media screen and (max-width: 960px) {
+  .v-btn--extra-large {
+    font-size: 20px;
+    height: 50px;
+  }
+}
+
 body {
   font-family: "Nunito", sans-serif;
 }
