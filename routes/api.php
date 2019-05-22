@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('changes', 'PageController@index')->name('api.changes');
+
+Route::post('login', 'AuthController@login');

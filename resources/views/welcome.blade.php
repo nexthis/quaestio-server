@@ -1,13 +1,18 @@
 @extends('layouts.layout')
 
 @section('content') 
+    {{-- 
+        todo
+        1) replaced all h1 on h2 (SEO)   
+        
+    --}}
 
     {{-- Hero  --}}
     <i-hero>
         <v-layout row wrap>
             <v-flex xs12 md6>
                 <h1 class="display-2 responsive-2 white--text" :class="{'mt-2': $vuetify.breakpoint.xsOnly, 'mt-5': $vuetify.breakpoint.smAndUp}">Quaestio</h1>
-                <h1 class="display-1 responsive-1 white--text" :class="{'mt-4': $vuetify.breakpoint.xsOnly, 'mt-5': $vuetify.breakpoint.smAndUp}">Lorem ipsum dolor sit amet, consectetur </h1>
+                <h2 class="display-1 responsive-1 white--text" :class="{'mt-4': $vuetify.breakpoint.xsOnly, 'mt-5': $vuetify.breakpoint.smAndUp}">Lorem ipsum dolor sit amet, consectetur </h2>
                 <p class="subheading white--text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                 <v-btn color="accent" round large class="ml-0 elevation-0" >Pobierz Teraz</v-btn>
             </v-flex>
@@ -19,7 +24,7 @@
 
     {{-- App --}}
     <v-container>
-        <h1 class="display-2 text-xs-center">Lorem Ipsum</h1>
+        <h2 class="display-2 text-xs-center">Lorem Ipsum</h2>
         <v-layout row wrap class="mt-5" align-center fill-height>
             <v-flex xs12 md5 >
                 <v-img contain max-height="500px" src="{{mix('image/phone.png')}}"></v-img>
@@ -68,12 +73,12 @@
             <v-window-item >
                 <v-layout row wrap>
                     <v-flex sm7>
-                        <h1 class="display-1 text-xs-center py-3 hidden-sm-and-up">Znajdź Swój Cel</h1>
+                        <h2 class="display-1 text-xs-center py-3 hidden-sm-and-up">Znajdź Swój Cel</h2>
                         @svg('undraw_road_sign_mfpo','img-carousel')
                         <p class="mt-3 text-xs-center title hidden-sm-and-up">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     </v-flex>
                     <v-flex sm5 class="hidden-sm-and-down">
-                        <h1 class="display-3 text-xs-center py-3 mt-4">Znajdź Swój Cel</h1>
+                        <h2 class="display-3 text-xs-center py-3 mt-4">Znajdź Swój Cel</h2>
                         <p class="mt-3 text-xs-center display-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     </v-flex>
                 </v-layout>
@@ -81,11 +86,12 @@
             <v-window-item >
                 <v-layout row wrap>
                     <v-flex sm7>
-                        <h1 class="display-1 text-xs-center py-3 hidden-sm-and-up">Znajdź Swój Cel</h1>
-                        @svg('undraw_road_sign_mfpo','img-carousel')
+                        <h2 class="display-1 text-xs-center py-3 hidden-sm-and-up">Zeskanuj Kod</h2>
+                        @svg('undraw_find_code','img-carousel')
+                        <p class="mt-3 text-xs-center title hidden-sm-and-up">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     </v-flex>
                     <v-flex sm5 class="hidden-sm-and-down">
-                        <h1 class="display-3 text-xs-center py-3 mt-4">Znajdź Swój Cel</h1>
+                        <h2 class="display-3 text-xs-center py-3 mt-4">Zeskanuj Kod</h2>
                         <p class="mt-3 text-xs-center display-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     </v-flex>
                 </v-layout>
@@ -93,11 +99,25 @@
             <v-window-item >
                 <v-layout row wrap>
                     <v-flex sm7>
-                        <h1 class="display-1 text-xs-center py-3 hidden-sm-and-up">Znajdź Swój Cel</h1>
-                        @svg('undraw_road_sign_mfpo','img-carousel')
+                        <h2 class="display-1 text-xs-center py-3 hidden-sm-and-up">Rozwiąż Zagadkę</h2>
+                        @svg('undraw_in_thought','img-carousel')
+                        <p class="mt-3 text-xs-center title hidden-sm-and-up">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     </v-flex>
                     <v-flex sm5 class="hidden-sm-and-down">
-                        <h1 class="display-3 text-xs-center py-3 mt-4">Znajdź Swój Cel</h1>
+                        <h2 class="display-3 text-xs-center py-3 mt-4">Rozwiąż Zagadkę</h2>
+                        <p class="mt-3 text-xs-center display-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </v-flex>
+                </v-layout>
+            </v-window-item>
+            <v-window-item >
+                <v-layout row wrap>
+                    <v-flex sm7>
+                        <h2 class="display-1 text-xs-center py-3 hidden-sm-and-up">Wygrywaj</h2>
+                        @svg('undraw_winn','img-carousel')
+                        <p class="mt-3 text-xs-center title hidden-sm-and-up">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </v-flex>
+                    <v-flex sm5 class="hidden-sm-and-down">
+                        <h2 class="display-3 text-xs-center py-3 mt-4">Wygrywaj</h2>
                         <p class="mt-3 text-xs-center display-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     </v-flex>
                 </v-layout>
@@ -114,24 +134,24 @@
                 @svg('undraw_around_the_world_v9nu','img-fluid')
             </v-flex>
             <v-flex sm6>
-                <h1 class="display-3 responsive-3 text-xs-center py-3">Gdziekolwiek Jesteś</h1>
+                <h2 class="display-3 responsive-3 text-xs-center py-3">Gdziekolwiek Jesteś</h2>
                 <p class="mt-3 text-xs-center display-1 responsive-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </v-flex>
             <v-flex sm6>
                 @svg('undraw_online_page_cq94','img-fluid')
             </v-flex>
             <v-flex sm6>
-                <h1 class="display-3 responsive-3 text-xs-center py-3">Wybierz Swój Styl</h1>
+                <h2 class="display-3 responsive-3 text-xs-center py-3">Wybierz Swój Styl</h2>
                 <p class="mt-3 text-xs-center display-1 responsive-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </v-flex>
             <v-flex sm6>
                 @svg('undraw_code_review_l1q9','img-fluid')
             </v-flex>
             <v-flex sm6>
-                <h1 class="display-3 responsive-3 text-xs-center py-3">Bądź unikalny</h1>
+                <h2 class="display-3 responsive-3 text-xs-center py-3">Bądź unikalny</h2>
                 <p class="mt-3 text-xs-center display-1 responsive-1">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </v-flex>
-                    <v-btn color="accent" round large class="elevation-0 mx-auto" >Skontaktuj się z nami</v-btn>
+                <v-btn color="accent" class="elevation-0 mx-auto v-btn--extra-large__round v-btn--extra-large" >Skontaktuj się z nami</v-btn>
         </v-layout>
 
 
@@ -150,8 +170,8 @@
                     <v-img src="{{asset('image/pawel-romanowski.jpg')}}" ></v-img>
                     <v-card-title primary-title>
                         <div style="width: 100%" class="text-xs-center">
-                            <h1 class="display-1 ">Paweł</h1>
-                            <h1 class="headline ">Romanowski</h1>
+                            <h2 class="display-1 ">Paweł</h2>
+                            <h2 class="headline ">Romanowski</h2>
                             <h5 class="subheading mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h5>
                         </div>
                     </v-card-title>
@@ -187,5 +207,4 @@
 
         </v-layout>
     </v-container>
-    
 @endsection

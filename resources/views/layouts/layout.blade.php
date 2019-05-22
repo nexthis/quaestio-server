@@ -25,7 +25,7 @@
         <v-app id="app">
             <v-content>
                 @yield('content')
-                <i-footer><h1 class="text-xs-center display-4 white--text">footer</h1></i-footer>
+                <i-footer><h2 class="text-xs-center display-4 white--text">footer</h2></i-footer>
             </v-content>
         </v-app>
 
