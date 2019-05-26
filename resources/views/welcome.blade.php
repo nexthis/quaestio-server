@@ -198,11 +198,67 @@
             </v-flex>
 
             <v-flex sm4>
+                <v-card>
+                    <v-img src="{{asset('image/pawel-romanowski.jpg')}}" ></v-img>
+                    <v-card-title primary-title>
+                        <div style="width: 100%" class="text-xs-center">
+                            <h2 class="display-1 ">Paweł</h2>
+                            <h2 class="headline ">Romanowski</h2>
+                            <h5 class="subheading mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h5>
+                        </div>
+                    </v-card-title>
+                    <v-card-actions>
 
+                        <v-btn fab  color="primary">
+                            <v-icon dark>share</v-icon>
+                        </v-btn>
+
+                        <v-spacer></v-spacer>
+
+                        <v-btn fab  color="primary">
+                            <v-icon dark>share</v-icon>
+                        </v-btn>
+
+                        <v-spacer></v-spacer>
+
+                        <v-btn fab  color="primary">
+                            <v-icon dark>share</v-icon>
+                        </v-btn>
+                        
+                    </v-card-actions>
+                </v-card>
             </v-flex>
 
             <v-flex sm4>
+                <v-card>
+                    <v-img src="{{asset('image/pawel-romanowski.jpg')}}" ></v-img>
+                    <v-card-title primary-title>
+                        <div style="width: 100%" class="text-xs-center">
+                            <h2 class="display-1 ">Paweł</h2>
+                            <h2 class="headline ">Romanowski</h2>
+                            <h5 class="subheading mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h5>
+                        </div>
+                    </v-card-title>
+                    <v-card-actions>
 
+                        <v-btn fab  color="primary">
+                            <v-icon dark>share</v-icon>
+                        </v-btn>
+
+                        <v-spacer></v-spacer>
+
+                        <v-btn fab  color="primary">
+                            <v-icon dark>share</v-icon>
+                        </v-btn>
+
+                        <v-spacer></v-spacer>
+
+                        <v-btn fab  color="primary">
+                            <v-icon dark>share</v-icon>
+                        </v-btn>
+                        
+                    </v-card-actions>
+                </v-card>
             </v-flex>
 
         </v-layout>
